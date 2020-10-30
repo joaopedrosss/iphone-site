@@ -1,0 +1,14 @@
+.action-text{
+    padding-top: 10%;
+}
+
+.action-text, .title, .subtitle {
+    text-align: center;
+}
+
+.action-text, .saiba-mais{
+    padding-top: 10%;
+    background-color: #16167e;
+    border-radius: 15%;
+}
+
