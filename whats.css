@@ -1,0 +1,9 @@
+@media (max-width: 900px){
+    .whats-section .image {
+        display:none;
+    }
+    .whats-section {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,9 @@
+@media (max-width: 900px){
+    .hard-section .img {
+        display:none;
+        padding: 0%;
+    }
+    .hard-section  {
+        justify-content: center;
+    }
+}
