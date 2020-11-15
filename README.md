@@ -8,7 +8,7 @@ https://joaopedrosss.github.io/iphone-12-pro-max/
 
 ### index.html
 
-Em <body>, há duas tags delimitadores de conteúdo: <header> e <section>.
+Em <body> , há duas tags delimitadores de conteúdo: <header> e <section>.
 
 A tag <header> ,cuja classe é main-header, delimita o Cabeçalho da página.
 A tag header e seu conteúdo está presente em todos os documentos html. 
@@ -25,35 +25,37 @@ foi alterado a cor de fundo da div da classe action-text, além de adicionada ma
 
 Foi adicionado o seguinte bloco de código:
 
+```
 .btn{
     background-color:#0f3bbd;
     outline: none;
    border: none;
 }
+```
 
 Para o botão na div "Saiba Mais" foram retiradas bordas e contornos, além de mudar a cor de fundo.
 
 ### whats.html
 
 Foi adicionado o seguinte bloco de código:
-
+```
 <p>
     Conheça mais sobre as funcionalidades que o novo Iphone tem a te oferecer.
 </p>
 <div class='saiba-mais'>
     <a class="btn btn-primary btn-lg" href="hardware.html" role="button">Funcionalidades</a>
 </div>
-
+```
 ### whats.css
 
 Foi adicionado o seguinte bloco de código:
-
+```
 .btn{
     background-color:#0f3bbd;
     outline: none;
    border: none;
 }
-
+```
 Para o botão de "Funcionalidades".
 
 ### devs.html
@@ -67,13 +69,14 @@ Já <footer> contém apenas um título <h4> com a data d última atualização f
 ### devs.html
 
 Foram adicionadas diversas declarações css para melhor estilização dos elementos, definindo:
- margens
- tamanho de fonte
- alinhamento de texto
- estilo de lista
+- margens
+- tamanho de fonte
+- alinhamento de texto
+- estilo de lista
 
 Em especial, vale destacar o seguinte bloco:
 
+```
 h4 {
     border: 1px white solid;
     text-align: center;
@@ -81,6 +84,7 @@ h4 {
     margin-right: 5%;
     padding: 1%;
 }
+```
 
 Que define a estilização do título <h4> em <footer>.
 
