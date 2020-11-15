@@ -7,8 +7,9 @@
 }
 
 .action-text, .saiba-mais{
+    margin-top:2%;
     padding-top: 10%;
-    background-color: #16167e;
+    background-color: #0c0ca5;
     border-radius: 15%;
 }
 
@@ -26,3 +27,8 @@
     }
 }
 
+.btn{
+    background-color:#0f3bbd;
+    outline: none;
+    border: none;
+}
