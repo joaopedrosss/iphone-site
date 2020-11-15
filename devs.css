@@ -1,0 +1,33 @@
+.devs {
+    text-align: start;
+    text-decoration: none;
+    font-size: 1.5rem;
+    align-items: center;
+}
+h2 {
+    text-align: center !important;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+ul {
+    list-style: cirle;
+    list-style-position: inside;
+}
+
+.name {
+    margin-bottom: 2%;
+}
+
+footer {
+    margin-top: 15%;
+    margin-bottom: 2%;
+}
+
+h4 {
+    border: 1px white solid;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+}
