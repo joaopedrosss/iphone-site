@@ -4,6 +4,10 @@ a web site promoting Iphone 12 Pro Max
 ## See by yourself:
 https://joaopedrosss.github.io/iphone-12-pro-max/
 
+## Para melhor visualizar este conteúdo
+Este documento foi escrito em Markdown Language.
+[Clique Aqui](https://github.com/joaopedrosss/iphone-12-pro-max/blob/main/README.md) para melhor visualização do conteúdo.
+
 ## IFAL - Resumo das alterações - 15/11/2020
 
 ### index.html
