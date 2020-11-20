@@ -42,3 +42,6 @@
     outline: none;
     border: none;
 }
+h1 {
+    text-shadow: 2px 2px 5px rgb(78, 73, 73);
+}

@@ -1,5 +1,6 @@
 # iphone-12-pro-max
-a web site promoting Iphone 12 Pro Max
+Um site promovendo o Iphone 12 Pro Max.
+A web site promoting Iphone 12 Pro Max.
 
 ## See by yourself:
 https://joaopedrosss.github.io/iphone-12-pro-max/
@@ -18,7 +19,7 @@ Este documento foi escrito em Markdown Language.
 ## IFAL - Resumo das alterações - 22/11/2020
 
 ### sobre.html
-Mudamos o nome da antiga pagina `devs.html` para `sobre.html`, bem como seu nome na barra de navegação.Apenas uma mudança de nome,haja visto que ela já estava presente na versão anterior.
+Mudamos o nome da antiga pagina `devs.html` para `sobre.html`, bem como seu nome na barra de navegação.Apenas uma mudança de nome,haja visto que seu conteúdo já estava presente na versão anterior.
 Além disso, agora ela conta com um link do repositório do projeto no github:
 
 ```
@@ -29,7 +30,7 @@ Além disso, agora ela conta com um link do repositório do projeto no github:
     </div>
 ```
 ### devs.html
-Foi adicionado um seletor a fim de mudar o estilo no bloco código anterior
+Foi adicionado um seletor a fim de mudar o estilo no bloco de código anterior:
 
 ```
 .github{
@@ -46,6 +47,41 @@ Foi adicionado a tag `<pictures>` a fim de ter imagens responsivas:
     <source media="(min-width: 900px)" srcset="phone -2.png" >
     <img src="images/iphone -1.png" alt="iphone-12" style='width:auto'>
 </picture>
+```
+
+### buy.html
+Foi criada esta nova página na qual estão inseridas uma imagem de fundo,uma tabela( `class="dados"`) e um título (`h2`).
+A tabela tem **Título** (`<caption>Meu Iphone</caption>`),**Cabecalho**(`<thead><tr><td colspan="2">Iphone 12 Pro Max</td></tr></thead>`),com **mesclagem de colunas** incluido.
+
+### buy.css
+
+Foi adicionado uma imagem de fundo a página `buy.html`:
+```
+body {
+    background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3e3mO3DMh-YoArEDcXwdnwcgtnf8Rn_BAbv5MHWOy9jMeCeHIHq7-_sMY1o_X-nf1NZKsULQwzETRCw9F3nNkfGfDCtnu8Vjm5CsJUPdC9_2xabZInEkrjyOfaQdUTWDI-F_thIYxxUY5i0XLsFPgHK=w1151-h647-no?authuser=0");
+}
+``` 
+
+Além disso, outro recurso disponível é o de **células zebradas**.
+
+```
+tbody > tr:nth-child(even){
+    background-color: rgba(11, 11, 216, 0.137);
+}
+tbody > tr:nth-child(odd){
+    background-color: #04041b;
+}
+```
+
+Somando a isso,ainda há todas as outras declarações CSS para estilizar a página.
+
+### index.css
+Também foi acrescentado um recurso de **sombreamento** em `index.css`:
+
+```
+h1 {
+    text-shadow: 2px 2px 5px rgb(78, 73, 73);
+}
 ```
 
 ## IFAL - Resumo das alterações - 15/11/2020
