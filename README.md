@@ -29,7 +29,7 @@ Além disso, agora ela conta com um link do repositório do projeto no github:
         </p>
     </div>
 ```
-### devs.html
+### devs.css
 Foi adicionado um seletor a fim de mudar o estilo no bloco de código anterior:
 
 ```
