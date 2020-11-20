@@ -1,0 +1,63 @@
+body {
+    background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3e3mO3DMh-YoArEDcXwdnwcgtnf8Rn_BAbv5MHWOy9jMeCeHIHq7-_sMY1o_X-nf1NZKsULQwzETRCw9F3nNkfGfDCtnu8Vjm5CsJUPdC9_2xabZInEkrjyOfaQdUTWDI-F_thIYxxUY5i0XLsFPgHK=w1151-h647-no?authuser=0");
+}
+
+.main-section{
+    text-align: center;
+    margin:auto;
+    overflow-x:auto;
+}
+
+h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+table {
+    width:500px;
+    border: 2px solid blue;
+    border-collapse: collapse;
+    margin:auto;
+    font-size: 1.2em;
+}
+td {
+    border:2px solid blue;
+    padding: 5px;
+}
+
+caption{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    background-color:blue;
+    padding:5px;
+}
+
+.btn{
+    margin-top:25px;
+    background-color: blue;
+    border:none;
+    outline:none;
+    width:200px;
+    margin-bottom:25px;
+}
+
+input {
+    border-radius: 2%;
+    outline: none;
+    border:none;
+    margin:5px;
+    background-color: rgb(0, 0, 255, 0.3);
+    padding:5px;
+    color:white;
+
+}
+
+tbody > tr:nth-child(even){
+    background-color: rgba(11, 11, 216, 0.137);
+}
+tbody > tr:nth-child(odd){
+    background-color: #04041b;
+}
+
+
