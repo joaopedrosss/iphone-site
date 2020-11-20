@@ -76,10 +76,10 @@ tbody > tr:nth-child(odd){
 Somando a isso,ainda há todas as outras declarações CSS para estilizar a página.
 
 ### index.css
-Também foi acrescentado um recurso de **sombreamento** em `index.css`:
+Também foi acrescentado um recurso de **sombreamento** em `index.css` em `<h1 class="title">Chegou o Novo Iphone da Apple</h1>`:
 
 ```
-h1 {
+.title {
     text-shadow: 2px 2px 5px rgb(78, 73, 73);
 }
 ```
