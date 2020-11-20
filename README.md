@@ -8,6 +8,46 @@ https://joaopedrosss.github.io/iphone-12-pro-max/
 Este documento foi escrito em Markdown Language.
 [Clique Aqui](https://github.com/joaopedrosss/iphone-12-pro-max/blob/main/README.md) para melhor visualização do conteúdo.
 
+## Integrantes da Equipe
+
+- Antonny Gabriel da Conceição Félix
+- Eduardo Romero de Araújo Guilhermino Sousa
+- João Pedro Simões da Silva Sousa
+- Maria Clara Gomes Oliveira
+
+## IFAL - Resumo das alterações - 22/11/2020
+
+### sobre.html
+Mudamos o nome da antiga pagina `devs.html` para `sobre.html`, bem como seu nome na barra de navegação.Apenas uma mudança de nome,haja visto que ela já estava presente na versão anterior.
+Além disso, agora ela conta com um link do repositório do projeto no github:
+
+```
+<div class='github'>
+        <p>
+            O código fonte do projeto se encontra em seu <a href='https://github.com/joaopedrosss/iphone-12-pro-max' target='_blank'>Repositório do Github</a>
+        </p>
+    </div>
+```
+### devs.html
+Foi adicionado um seletor a fim de mudar o estilo no bloco código anterior
+
+```
+.github{
+    text-align: center !important;
+    font-size: 1.5rem;
+}
+```
+
+### index.html
+Foi adicionado a tag `<pictures>` a fim de ter imagens responsivas:
+
+```
+<picture>
+    <source media="(min-width: 900px)" srcset="phone -2.png" >
+    <img src="images/iphone -1.png" alt="iphone-12" style='width:auto'>
+</picture>
+```
+
 ## IFAL - Resumo das alterações - 15/11/2020
 
 ### index.html
