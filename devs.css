@@ -20,8 +20,13 @@ ul {
 }
 
 footer {
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 2%;
+}
+
+.github{
+    text-align: center !important;
+    font-size: 1.5rem;
 }
 
 h4 {
