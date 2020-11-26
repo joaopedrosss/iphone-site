@@ -16,6 +16,16 @@ Este documento foi escrito em Markdown Language.
 - João Pedro Simões da Silva Sousa
 - Maria Clara Gomes Oliveira
 
+## IFAL - Resumo das alterações - 27/11/2020
+
+### folder css
+Foi criado um novo diretório - **css** - para guardar apenas os arquivos css para melhor organização do projeto
+
+### form.html
+Foi criada este novo arquivo html para a página **Cadastre-se** para o cadastro do usuário em uma plataforma fictícia da apple.Optou-se por se fazer assim para incluir o uso de formulários no projeto. 
+### form.css
+Página que define a estilização da página `form.html`.
+
 ## IFAL - Resumo das alterações - 22/11/2020
 
 ### sobre.html
