@@ -27,20 +27,42 @@ Em cada uma das diversas tag `<option>` foi colocada um nome ne um país em refe
 
 Os nomes países não foram colocados um cada vez.Para isso pegamos um código já pronto em um [site](https://www.codigofonte.com.br/codigos/lista-de-paises).
 
-Além disso, para `<input>` foram usados os seguintes `types`(tipos):`radio`,`text`, `password`,`email` e `date`. 
+Além disso, para as tags `<input>` foram usados os seguintes `types`(tipos):`radio`,`text`, `password`,`email` e `date`. 
 
-E cada `<input>` com o atributo `class="text"` em o seu próprio atributo `placeholder`.
+E cada `<input>` com o atributo `class="text"` tem o seu próprio atributo `placeholder`.
+
 **A estilização do formulário se encotra em** `form.css` (também recém criado).
 
 ### Media Queries
 Os documentos `form.css`,`whats.css`,`index.css`,`hardware.css` e `buy.css` **contém media queries** afim de que os elementos do site respondam adequadamente aos diferentes tamanhos de tela.
 
+Como exemplo,este trecho de código que se encontra em `buy.css`:
+```
+@media (max-width:480px) { /*mobile*/
+    body{
+        background-image: url("http://tiledwallpaper.com/wallpapers/2018/3/21020836275ab0bc5222aa24.22375899.jpg");
+    }
+}
+@media(min-width:481px) and (max-width:1024px) { /*tablet*/
+    body{
+        background-image: none;
+        background-color: #00043B;
+    }
+}
+@media(min-width:1025px){/*desktop*/
+    body{
+        background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3e3mO3DMh-YoArEDcXwdnwcgtnf8Rn_BAbv5MHWOy9jMeCeHIHq7-_sMY1o_X-nf1NZKsULQwzETRCw9F3nNkfGfDCtnu8Vjm5CsJUPdC9_2xabZInEkrjyOfaQdUTWDI-F_thIYxxUY5i0XLsFPgHK=w1151-h647-no?authuser=0");
+    }
+    
+}
+```
+
 ### Outros Ajustes
 Foi criada uma pasta *css* a fim de armazenar exclusivamente as Folhas de Estilo Em Cascasta (**CSS Sheets**) dos documentos HTML.
 
-**Ou seja,todos os documentos css estão na pasta css.**
+**Ou seja,todos os documentos .css estão na pasta css.**
 
-Agora,a imagem de fundo (background-image) de `buy.html` muda de acordo com a largura da tela.Esse variação foi feita com um media query em `buy.css`.
+Agora a imagem de fundo (background-image) de `buy.html` muda de acordo com a largura da tela.Esse variação foi feita com um media query em `buy.css`(no caso, o trecho de código anterior).
 
 Em `sobre.html`, foi mudada a data da último atualização do site - no caso, colocamos a data da entrega mais recente do projeto, embora as tais altualizações já estivessem prontas em **27 de novembro de 2020**.
 
