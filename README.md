@@ -17,15 +17,34 @@ Link curto: [http://gg.gg/12-iphone](http://gg.gg/12-iphone)
 - João Pedro Simões da Silva Sousa
 - Maria Clara Gomes Oliveira
 
-## IFAL - Resumo das alterações - 27/11/2020
+## IFAL - Resumo das alterações - 29/11/2020
 
-### folder css
-Foi criado um novo diretório - **css** - para guardar apenas os arquivos css para melhor organização do projeto
+### Formulário
+**O formulário se encontrar no documento recém criado** `form.html`.
+Para fazer as tags foram usadas as tags `<form>`, `<label>` ,`<input>` ,`<br>`,`<div>`, `<select>` e `<option>`.
 
-### form.html
-Foi criada este novo arquivo html para a página **Cadastre-se** para o cadastro do usuário em uma plataforma fictícia da apple.Optou-se por se fazer assim para incluir o uso de formulários no projeto. 
-### form.css
-Página que define a estilização da página `form.html`.
+Em cada uma das diversas tag `<option>` foi colocada um nome ne um país em referência a tag `<select>`,onde o usuário pode selecionar o seu país de origem.
+
+Os nomes países não foram colocados um cada vez.Para isso pegamos um código já pronto em um [site](https://www.codigofonte.com.br/codigos/lista-de-paises).
+
+Além disso, para `<input>` foram usados os seguintes `types`(tipos):`radio`,`text`, `password`,`email` e `date`. 
+
+E cada `<input>` com o atributo `class="text"` em o seu próprio atributo `placeholder`.
+**A estilização do formulário se encotra em** `form.css` (também recém criado).
+
+### Media Queries
+Os documentos `form.css`,`whats.css`,`index.css`,`hardware.css` e `buy.css` **contém media queries** afim de que os elementos do site respondam adequadamente aos diferentes tamanhos de tela.
+
+### Outros Ajustes
+Foi criada uma pasta *css* a fim de armazenar exclusivamente as Folhas de Estilo Em Cascasta (**CSS Sheets**) dos documentos HTML.
+
+**Ou seja,todos os documentos css estão na pasta css.**
+
+Agora,a imagem de fundo (background-image) de `buy.html` muda de acordo com a largura da tela.Esse variação foi feita com um media query em `buy.css`.
+
+Em `sobre.html`, foi mudada a data da último atualização do site - no caso, colocamos a data da entrega mais recente do projeto, embora as tais altualizações já estivessem prontas em **27 de novembro de 2020**.
+
+Fora as mudanças já citadas, foram feitas outras alterações mais pontuais e menos relevantes para este contexto.
 
 ## IFAL - Resumo das alterações - 22/11/2020
 
