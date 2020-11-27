@@ -2,6 +2,7 @@
     .hard-section .img {
         display:none;
         padding: 0%;
+        margin:0;
     }
     .hard-section  {
         justify-content: center;
