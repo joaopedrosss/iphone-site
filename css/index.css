@@ -41,8 +41,7 @@
 @media (min-width:320px) and (max-width:768px){
     .action-text{
        width: 300px;
-       height:400px;
-       background-color: blue; 
+       height:400px; 
     }
 }
 
