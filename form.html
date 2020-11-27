@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Iphone 12</title>
@@ -36,7 +36,48 @@
                 <a class="nav-link" href="sobre.html">Sobre</a>
             </li>
         </ul>
-    </header>
+    </header> 
+    <h2>Faça sua conta Apple</h2>
+    <form action="" method='post'>
+        <div>
+            <label for="nome">Nome:</label>
+            <input class="text" type="text" id="nome" placeholder="digite o seu nome completo">
+        </div>
+        <div>
+            <label for="usuário">Usuário:</label>
+            <input class="text" type="text" id="usuário" placeholder="digite o seu nome de usuário">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input class="text" type="email" id="email" placeholder="digite o seu email">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input class="text" type='password' id='senha' placeholder="digite a sua senha">
+        </div>
+        <div>
+            <label for="senha-denovo">Senha:</label>
+            <input class="text" type="password" id='senha-denovo' placeholder="digite novamente sua senha">
+        </div>
+        <div>
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento">
+        </div>
+        <div>
+            <label for="receber-emails">Aceita receber nossos emails?</label> <br>
+            <input class="radio" type="radio" name="email" value="sim">Sim
+            <input class="radio" type="radio" name="email" value="não">Não
+        </div>
+        <div>
+            <label for="termos-e-condicoes-de-servico">Concorda com os nossos <a  href="#">Termos e Condições de Serviço</a>?</label> <br>
+            <input class="radio" type="radio" name="termos-e-condicoes-de-servico" value="sim">Sim,concordo 
+            <input class="radio "type="radio" name="termos-e-condicoes-de-servico" value="sim">Não concordo
+        </div>
+    </form>
+    <div class='fazer-conta'>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Fazer Conta</a>
+    </div>
+    
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

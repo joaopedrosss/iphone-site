@@ -18,3 +18,9 @@ body {
     text-align: center;
     padding-top: 2%;
 }
+
+.btn{
+    background-color:#0f3bbd;
+    outline: none;
+    border: none;
+}
