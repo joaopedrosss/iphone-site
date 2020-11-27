@@ -23,15 +23,15 @@ Link curto: [http://gg.gg/12-iphone](http://gg.gg/12-iphone)
 **O formulário se encontrar no documento recém criado** `form.html`.
 Para fazer as tags foram usadas as tags `<form>`, `<label>` ,`<input>` ,`<br>`,`<div>`, `<select>` e `<option>`.
 
-Em cada uma das diversas tag `<option>` foi colocada um nome ne um país em referência a tag `<select>`,onde o usuário pode selecionar o seu país de origem.
+Em cada uma das diversas tag `<option>` foi colocada um nome de um país em referência a tag `<select>`,onde o usuário pode selecionar o seu país de origem.
 
-Os nomes países não foram colocados um cada vez.Para isso pegamos um código já pronto em um [site](https://www.codigofonte.com.br/codigos/lista-de-paises).
+Os nomes países não foram colocados um de cada vez.Para isso pegamos um código já pronto em um [site](https://www.codigofonte.com.br/codigos/lista-de-paises).
 
 Além disso, para as tags `<input>` foram usados os seguintes `types`(tipos):`radio`,`text`, `password`,`email` e `date`. 
 
-E cada `<input>` com o atributo `class="text"` tem o seu próprio atributo `placeholder`.
+E cada tag `<input>` com o atributo `class="text"` conta com o seu próprio atributo `placeholder`.
 
-**A estilização do formulário se encotra em** `form.css` (também recém criado).
+**A estilização do formulário se encontra em** `form.css` (também recém criado).
 
 ### Media Queries
 Os documentos `form.css`,`whats.css`,`index.css`,`hardware.css` e `buy.css` **contém media queries** afim de que os elementos do site respondam adequadamente aos diferentes tamanhos de tela.
