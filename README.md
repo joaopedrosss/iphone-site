@@ -9,6 +9,7 @@ https://joaopedrosss.github.io/iphone-12-pro-max/
 Este documento foi escrito em Markdown Language.
 [Clique Aqui](https://github.com/joaopedrosss/iphone-12-pro-max/blob/main/README.md) para melhor visualização do conteúdo.
 
+Link curto: [http://gg.gg/12-iphone](http://gg.gg/12-iphone)
 ## Integrantes da Equipe
 
 - Antonny Gabriel da Conceição Félix
