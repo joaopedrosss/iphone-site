@@ -1,5 +1,26 @@
 body {
-    background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3e3mO3DMh-YoArEDcXwdnwcgtnf8Rn_BAbv5MHWOy9jMeCeHIHq7-_sMY1o_X-nf1NZKsULQwzETRCw9F3nNkfGfDCtnu8Vjm5CsJUPdC9_2xabZInEkrjyOfaQdUTWDI-F_thIYxxUY5i0XLsFPgHK=w1151-h647-no?authuser=0");
+    background-position:center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:480px) { /*mobile*/
+    body{
+        background-image: url("http://tiledwallpaper.com/wallpapers/2018/3/21020836275ab0bc5222aa24.22375899.jpg");
+    }
+}
+@media(min-width:481px) and (max-width:1024px) { /*tablet*/
+    body{
+        background-image: none;
+        background-color: #00043B;
+    }
+}
+@media(min-width:1025px){/*desktop*/
+    body{
+        background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3e3mO3DMh-YoArEDcXwdnwcgtnf8Rn_BAbv5MHWOy9jMeCeHIHq7-_sMY1o_X-nf1NZKsULQwzETRCw9F3nNkfGfDCtnu8Vjm5CsJUPdC9_2xabZInEkrjyOfaQdUTWDI-F_thIYxxUY5i0XLsFPgHK=w1151-h647-no?authuser=0");
+    }
+    
 }
 
 .main-section{
@@ -59,5 +80,4 @@ tbody > tr:nth-child(even){
 tbody > tr:nth-child(odd){
     background-color: #04041b;
 }
-
 

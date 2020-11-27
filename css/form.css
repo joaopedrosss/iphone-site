@@ -54,3 +54,13 @@ label {
 .multiple {
     display:block;
 }
+
+@media (max-width:480px) {
+    form{
+        width:300px;
+    }
+    .text{
+        width:250px;
+        display:block;
+    }
+}
