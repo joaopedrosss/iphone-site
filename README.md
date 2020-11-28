@@ -42,6 +42,12 @@ Como exemplo,este trecho de código que se encontra em `buy.css`:
     body{
         background-image: url("http://tiledwallpaper.com/wallpapers/2018/3/21020836275ab0bc5222aa24.22375899.jpg");
     }
+    .dados {
+        width:200px;
+    }
+    input{
+        width:200px;
+    }
 }
 @media(min-width:481px) and (max-width:1024px) { /*tablet*/
     body{
