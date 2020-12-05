@@ -17,6 +17,9 @@ Link curto: [http://gg.gg/12-iphone](http://gg.gg/12-iphone)
 - João Pedro Simões da Silva Sousa
 - Maria Clara Gomes Oliveira
 
+## IFAL - Resumo das alterações - 6/12/2020
+
+
 ## IFAL - Resumo das alterações - 29/11/2020
 
 ### Formulário

@@ -38,26 +38,26 @@
         </ul>
     </header> 
     <h2>Faça sua conta Apple</h2>
-    <form action="" method='post'>
+    <form id  ="cadastro" name = "cadastro" onSubmit="return validarCadastro();"> <!--action="" method='post'-->
         <div>
             <label for="nome">Nome:</label>
-            <input class="text" type="text" id="nome" placeholder="digite o seu nome completo">
+            <input class="text" type="text" id="nome" name = "nome" placeholder="digite o seu nome completo">
         </div>
         <div>
-            <label for="usuário">Usuário:</label>
-            <input class="text" type="text" id="usuário" placeholder="digite o seu nome de usuário">
+            <label for="user">Usuário:</label>
+            <input class="text" type="text" id="user" name="user" placeholder="digite o seu nome de usuário">
         </div>
         <div>
             <label for="email">Email:</label>
-            <input class="text" type="email" id="email" placeholder="digite o seu email">
+            <input class="text" type="email" id="email" name="email" placeholder="digite o seu email">
         </div>
         <div>
             <label for="senha">Senha:</label>
-            <input class="text" type='password' id='senha' placeholder="digite a sua senha">
+            <input class="text" type='password' id='senha' name="senha" placeholder="digite a sua senha">
         </div>
         <div>
             <label for="senha-denovo">Senha:</label>
-            <input class="text" type="password" id='senha-denovo' placeholder="digite novamente sua senha">
+            <input class="text" type="password" id='senha-denovo' name="senha-denovo" placeholder="digite novamente sua senha">
         </div>
         <div>
             <label for="nascimento">Data de Nascimento:</label>
@@ -245,21 +245,22 @@
         </div>
         <div>
             <label for="receber-emails">Aceita receber nossos emails?</label> <br>
-            <input class="radio" type="radio" name="email" value="sim">Sim
-            <input class="radio" type="radio" name="email" value="não">Não
+            <input class="radio" type="radio" name="emails-sim" value="sim">Sim
+            <input class="radio" type="radio" name="emails-nao" value="não">Não
         </div>
         <div>
             <label for="termos-e-condicoes-de-servico">Concorda com os nossos <a  href="#">Termos e Condições de Serviço</a>?</label> <br>
-            <input class="radio" type="radio" name="termos-e-condicoes-de-servico" value="sim">Sim,concordo 
-            <input class="radio "type="radio" name="termos-e-condicoes-de-servico" value="sim">Não concordo
+            <input class="radio" type="radio" name="termos-sim" value="sim">Sim,concordo 
+            <input class="radio "type="radio" name="termos-nao" value="nao">Não concordo
         </div>
     </form>
-    <div class='fazer-conta'>
-        <a class="btn btn-primary btn-lg" href="" role="button">Fazer Conta</a>
-    </div>
+    <p class='fazer-conta'>
+        <input type="submit" form="cadastro" class='fazer-conta btn btn-primary btn-lg' role="button">
+        </input>
+    </p>
     
-
-
+    
+    <script type = "text/javascript" src="script/form.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
