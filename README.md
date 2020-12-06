@@ -23,29 +23,28 @@ Link curto: [http://gg.gg/12-iphone](http://gg.gg/12-iphone)
 
 ### Introdução
 
-Criou-se a pasta **script** para armazena o cogido em javscript usado no projeto.O `formjs` tem o codigo que **validação do dos formularios**, enquanto os outros - `hard.js` , `index.js`, `sobre.js`,`whats.js`- têm o código das "animações" - isto é, da **interatividade do JavaScript com a DOM** - NamedNodeMap object.
+Criou-se a pasta **script** para armazena o código em javscript usado no projeto.O `form.js` tem o codigo de **validação dos formularios**, enquanto os outros - `hard.js` , `index.js`, `sobre.js`,`whats.js`- têm o código das "animações" - isto é, da **interatividade do JavaScript com a DOM** - NamedNodeMap object.
 
 ### Validação do Formulário
 
-O código para validar o envio do formulário está em `form.js`` como já dito.
+O código para validar o envio do formulário está em `form.js` como já dito.
 
 Para pegar e manipular todos os elementos da DOM, foi usada uma estrutura semelhante a esta:
 
-´´´
-var nome = document.cadastro.nome.value; 
-
-if (nome == "" || 
+```
+    var nome = document.cadastro.nome.value;
+    if (nome == "" || 
     nome.length < 3){
         alert("O campo NOME precisa ter no mínimo 3 dígitos");
         nome.focus();
         return false;
     };
-´´´
+```
 
 Vale destacar a forma como foi feita a manipulação para pegar elementos `input` do tipo `radio`:
 
 ```
-q_receber = -1;
+    q_receber = -1;
     for (x = receber.length - 1; x > -1; x--){
         if(receber[x].checked){
             q_receber = x;
@@ -66,14 +65,22 @@ q_receber = -1;
 
 As animações são das mais diversas.
 
-Começando na página index.html - **início**-, no qual o **"banner" azul fica mais escuro quando o mouse passar por cima**. Não só com mouse, mas **também com o dedo** em um dispositivo com tela touch, afim de manter *a mesma responsividade* indepentente do dispositivo.
+Começando na página index.html - **Início**-, no qual o **"banner" azul fica mais escuro quando o mouse passar por cima**. Não só com mouse, mas **também com o dedo** em um dispositivo com tela touch, afim de manter *a mesma responsividade* indepentente do dispositivo.
 
 Isto de se deve ao uso dos eventos `onmouseover` e `onmouseleave` (desktop) tal como os eventos `ontouchstart` / `ontouchend` (mobile) nos scripts, como mostrado a seguir:
 
 **HTML**:
 
 ```
-<div class="col-md-5 action-text" onmouseover="return back()" onmouseleave="return back2()" ontouchstart="return back()" ontouchend="return back2()" id="action-text">
+<div 
+    class="col-md-5 action-text"
+    onmouseover="return back()" 
+    onmouseleave="return back2()" 
+    ontouchstart="return back()" 
+    ontouchend="return back2()" 
+    id="action-text">
+    (...)
+</div>
 ```
 
 **JAVASCRIPT**:
@@ -90,25 +97,29 @@ function back2(){
 }
 ```
 
-Na verdade, esses eventos são amplamente usados aqui e tem outros usos.
+Na verdade, *esses eventos são amplamente usados aqui e tem outros usos neste site*.
 
 Um dos outros usos de tais eventos **é quando as letras da maioria da textos mudam de cor com o passar do mouse/dedo por cima delas** nas outras páginas como a seguir:
 
 ```
-<h2 onmouseover="return color(this)" onmouseleave="return uncolor(this)" ontouchstart="return color(this)" ontouchend="return uncolor(this)">Front-End desenvolvido por:</h2>
+<h2 onmouseover="return color(this)" 
+onmouseleave="return uncolor(this)" 
+ontouchstart="return color(this)" 
+ontouchend="return uncolor(this)">
+Front-End desenvolvido por:</h2>
 ```
 
 Uma animação de destaque se encontra na página `whats.html` - **O que é** - **na qual ao passar o mouse por cima do Iphone, outro Iphone de outra cor aparece no lugar**. Isso serve para mostrar as diferentes cores disponíveis do Iphone 12 Pro Max.
 
-Para da esse efeito, foi usado o (trabalhoso) código em `whats.js` com a função `mudar()`.Digo trabalhoso pois,apesar do código ser pequeno, foi gasto muito tempo para chegar a tal raciocínio.
+Para da esse efeito, foi usado o (trabalhoso) código em `whats.js` com a função `mudar()`.É dito trabalhoso pois,apesar do código ser pequeno, foi gasto muito tempo para chegar a tal raciocínio.
 
-Em `hardware.html` - **Funcionalidades** - **apenas os títulos mudam de cor** a fim de proporcionar melhor leitura de tetos longos aos usuários.
+Em `hardware.html` - **Funcionalidades** - **apenas os títulos mudam de cor** a fim de proporcionar melhor leitura de textos longos aos usuários.
 
-Ainda nesta página, você poderá ter uma surpresa quando **passar o mouse por cima da maça colorida** ao final da página.
+Ainda nesta página, você poderá ter uma surpresa quando **passar o mouse por cima da maçã colorida** ao final da página - uma maçã branca surge no lugar.
 
 Em `sobre.html` as letras também mudam de cor quando em contato com o mouse.Nela, **parece haver um erro**, pois a data de atualização - **29 de novembro de 2020** - está **atrasada**.
 
-Isto foi proposital: **quando se passa o mouse nela,a data logo muda para 6 de dezembro de 2020**, a data correta.Isso foi feito tão somente a fim de colocar em prática um dos requisitos para esta presente entrega/atualização do projeto. 
+Isto foi proposital: **quando se passa o mouse nela,a data logo muda para 6 de dezembro de 2020, a data correta**.Isso foi feito tão somente a fim de colocar em prática um dos requisitos para esta presente entrega/atualização do projeto.
 
 ### Outros ajustes
 
@@ -121,6 +132,8 @@ Na página `form.html` - **Cadastre-se** - em questão de estilo mudou-se a cor 
 ```
 
 Nele, foram inseridos um `id` e um `name`.
+
+Fora outros pequenos ajustes não relevantes,estas foram as alterações feita no projeto.
 
 ## IFAL - Resumo das alterações - 29/11/2020
 
