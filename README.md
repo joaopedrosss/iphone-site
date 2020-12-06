@@ -13,9 +13,114 @@ Link curto: [http://gg.gg/12-iphone](http://gg.gg/12-iphone)
 ## Integrantes da Equipe
 
 - Antonny Gabriel da Conceição Félix
-- Eduardo Romero de Araújo Guilhermino Sousa
+- Eduardo Romero de Araújo Guilhermino Sousa* 
 - João Pedro Simões da Silva Sousa
 - Maria Clara Gomes Oliveira
+
+**obs.:** **o aluno Eduardo Romero não está mais participando das nossas aulas de Web*
+
+## IFAL - Resumo das alterações - 6/12/2020
+
+### Introdução
+
+Criou-se a pasta **script** para armazena o cogido em javscript usado no projeto.O `formjs` tem o codigo que **validação do dos formularios**, enquanto os outros - `hard.js` , `index.js`, `sobre.js`,`whats.js`- têm o código das "animações" - isto é, da **interatividade do JavaScript com a DOM** - NamedNodeMap object.
+
+### Validação do Formulário
+
+O código para validar o envio do formulário está em `form.js`` como já dito.
+
+Para pegar e manipular todos os elementos da DOM, foi usada uma estrutura semelhante a esta:
+
+´´´
+var nome = document.cadastro.nome.value; 
+
+if (nome == "" || 
+    nome.length < 3){
+        alert("O campo NOME precisa ter no mínimo 3 dígitos");
+        nome.focus();
+        return false;
+    };
+´´´
+
+Vale destacar a forma como foi feita a manipulação para pegar elementos `input` do tipo `radio`:
+
+```
+q_receber = -1;
+    for (x = receber.length - 1; x > -1; x--){
+        if(receber[x].checked){
+            q_receber = x;
+        }
+    };
+    if(q_receber == -1){
+        alert("Quer receber nossos emails?");
+        receber[0].focus();
+        return false;
+    };
+    if (!(termos[0].checked)){
+        alert("Precisa aceitar nossos Termos e Condições de Serviço para prosseguir.");
+        return false;
+    }
+```
+
+### Animações
+
+As animações são das mais diversas.
+
+Começando na página index.html - **início**-, no qual o **"banner" azul fica mais escuro quando o mouse passar por cima**. Não só com mouse, mas **também com o dedo** em um dispositivo com tela touch, afim de manter *a mesma responsividade* indepentente do dispositivo.
+
+Isto de se deve ao uso dos eventos `onmouseover` e `onmouseleave` (desktop) tal como os eventos `ontouchstart` / `ontouchend` (mobile) nos scripts, como mostrado a seguir:
+
+**HTML**:
+
+```
+<div class="col-md-5 action-text" onmouseover="return back()" onmouseleave="return back2()" ontouchstart="return back()" ontouchend="return back2()" id="action-text">
+```
+
+**JAVASCRIPT**:
+
+```
+function back(){
+    fundo = document.getElementById("action-text")
+    fundo.style.background = "#0c0ca583";
+}
+
+function back2(){
+    fundo = document.getElementById("action-text")
+    fundo.style.background = "#0c0ca5";
+}
+```
+
+Na verdade, esses eventos são amplamente usados aqui e tem outros usos.
+
+Um dos outros usos de tais eventos **é quando as letras da maioria da textos mudam de cor com o passar do mouse/dedo por cima delas** nas outras páginas como a seguir:
+
+```
+<h2 onmouseover="return color(this)" onmouseleave="return uncolor(this)" ontouchstart="return color(this)" ontouchend="return uncolor(this)">Front-End desenvolvido por:</h2>
+```
+
+Uma animação de destaque se encontra na página `whats.html` - **O que é** - **na qual ao passar o mouse por cima do Iphone, outro Iphone de outra cor aparece no lugar**. Isso serve para mostrar as diferentes cores disponíveis do Iphone 12 Pro Max.
+
+Para da esse efeito, foi usado o (trabalhoso) código em `whats.js` com a função `mudar()`.Digo trabalhoso pois,apesar do código ser pequeno, foi gasto muito tempo para chegar a tal raciocínio.
+
+Em `hardware.html` - **Funcionalidades** - **apenas os títulos mudam de cor** a fim de proporcionar melhor leitura de tetos longos aos usuários.
+
+Ainda nesta página, você poderá ter uma surpresa quando **passar o mouse por cima da maça colorida** ao final da página.
+
+Em `sobre.html` as letras também mudam de cor quando em contato com o mouse.Nela, **parece haver um erro**, pois a data de atualização - **29 de novembro de 2020** - está **atrasada**.
+
+Isto foi proposital: **quando se passa o mouse nela,a data logo muda para 6 de dezembro de 2020**, a data correta.Isso foi feito tão somente a fim de colocar em prática um dos requisitos para esta presente entrega/atualização do projeto. 
+
+### Outros ajustes
+
+Não houve nenhuma alteração em  `buy.html`- **Peça o Seu**.
+
+Na página `form.html` - **Cadastre-se** - em questão de estilo mudou-se a cor de fundo do do formulário para a cor `rgba(0, 86, 156, 0.157)`.Além disso, foram inseridos novos atributos nos elementos html a fim de achar esses elementos mais tarde no script, como exemplificado no código abaixo:
+
+```
+<input class="text" type="password" id="rep_senha" name="rep_senha" placeholder="digite novamente sua senha">
+```
+
+Nele, foram inseridos um `id` e um `name`.
 
 ## IFAL - Resumo das alterações - 29/11/2020
 

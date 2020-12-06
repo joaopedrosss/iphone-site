@@ -16,3 +16,11 @@
     outline: none;
     border: none;
 }
+
+p {
+    transition: 2s;
+}
+
+h2 {
+    transition: 2s;
+}

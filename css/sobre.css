@@ -36,3 +36,7 @@ h4 {
     margin-right: 5%;
     padding: 1%;
 }
+
+h2,li,p {
+    transition: 2s;
+}

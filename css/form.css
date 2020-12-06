@@ -6,6 +6,7 @@ form {
     padding: 1em;
     border: 3px solid rgb(0, 86, 156);
     border-radius: 1em;
+    background-color:  rgba(0, 86, 156, 0.157) ;
 }
 
 form div + div { /**/
@@ -48,6 +49,7 @@ label {
 .fazer-conta {
     text-align: center;
     margin-bottom:2%;
+    margin-top:1%;
 }
 
 
@@ -57,10 +59,13 @@ label {
 
 @media (max-width:480px) {
     form{
-        width:300px;
+        width:290px;
     }
     .text{
         width:250px;
         display:block;
+    }
+    .fazer-conta{
+        margin-top:2%;
     }
 }
