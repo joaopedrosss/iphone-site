@@ -41,7 +41,7 @@
     <form id  ="cadastro" name = "cadastro" onSubmit="return validarCadastro();"> <!--action="" method='post'-->
         <div>
             <label for="nome">Nome:</label>
-            <input class="text" type="text" id="nome" name = "nome" placeholder="digite o seu nome completo">
+            <input class="text" type="text" id="nome" name = "nome" placeholder="digite seu nome completo">
         </div>
         <div>
             <label for="user">Usuário:</label>
@@ -56,8 +56,8 @@
             <input class="text" type='password' id='senha' name="senha" placeholder="digite a sua senha">
         </div>
         <div>
-            <label for="senha-denovo">Senha:</label>
-            <input class="text" type="password" id='senha-denovo' name="senha-denovo" placeholder="digite novamente sua senha">
+            <label for="rep_senha">Senha:</label>
+            <input class="text" type="password" id="rep_senha" name="rep_senha" placeholder="digite novamente sua senha">
         </div>
         <div>
             <label for="nascimento">Data de Nascimento:</label>
@@ -245,13 +245,13 @@
         </div>
         <div>
             <label for="receber-emails">Aceita receber nossos emails?</label> <br>
-            <input class="radio" type="radio" name="emails-sim" value="sim">Sim
-            <input class="radio" type="radio" name="emails-nao" value="não">Não
+            <input class="radio" type="radio" name = "receber" value="sim">Sim
+            <input class="radio" type="radio" name = "receber"  value="nao">Não
         </div>
         <div>
-            <label for="termos-e-condicoes-de-servico">Concorda com os nossos <a  href="#">Termos e Condições de Serviço</a>?</label> <br>
-            <input class="radio" type="radio" name="termos-sim" value="sim">Sim,concordo 
-            <input class="radio "type="radio" name="termos-nao" value="nao">Não concordo
+            <label for="termos-e-condicoes-de-servico">Aceita os nossos <a  href="#">Termos e Condições de Serviço</a>?</label> <br>
+            <input class="radio" type="radio" name="termos" value="sim">Sim,aceito 
+            <input class="radio "type="radio" name="termos" value="nao">Não aceito
         </div>
     </form>
     <p class='fazer-conta'>
