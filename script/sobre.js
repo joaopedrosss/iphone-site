@@ -11,7 +11,7 @@ function fundo(fundo){
         fundo.style.background = "#0f3bbd";
         fundo.style.color = "black";
     }
-    fundo.textContent = "Atualizado em 06 de dezembro de 2020";
+    fundo.textContent = "Atualizado em 12 de dezembro de 2020";
 }
 
 function fundo2(fundo){

@@ -6,6 +6,9 @@ localStorage.setItem("3","https://store.storeimages.cdn-apple.com/4982/as-images
 
 
 function mudar(){
+    //cores do iphone para informar no title
+    var cores = ["Iphone 12 Pro Max Blue","Iphone 12 Pro Max Silver","Iphone 12 Pro Max Gold","Iphone 12 Pro Max Graphite"]
+
     //ic = image counter - variavel que vai servir para navegar entre as imagens do iphone em diferentes cores - blue,silver,gold,graphite - nos links acima
     var imagem = document.getElementById("iphones")
     const ic = localStorage.getItem("ic")
@@ -21,6 +24,7 @@ function mudar(){
     const nova_imagem = localStorage.getItem(novo)
     console.log(nova_imagem);
     imagem.src = String(nova_imagem)
+    imagem.title = cores[novo]
 
     localStorage.setItem("ic",novo);
 }

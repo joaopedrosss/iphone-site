@@ -34,3 +34,7 @@ body {
 .progress-bar{
     background-color: #0F3BBD;/*#00529C;*/
 }
+
+.ainda-nao-tem{
+    font-size: 1.4rem;
+}

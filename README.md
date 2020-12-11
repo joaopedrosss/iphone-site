@@ -40,9 +40,37 @@ De qualquer forma, para chamar os recursos do Bootstrap, usamos as seguintes tag
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 ```
-
 ### Sistema de Grid
+Usamos o sistema de grind em 3 páginas:
+**Em `index.html`:**
+```
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <!--html...-->
+        <div class="col-md-5 action-text" onmouseover="return back()" onmouseleave="return back2()" ontouchstart="return back()" ontouchend="return back2()" id="action-text">
+             <!--more html...-->
+```
+Ela foi divida em 2 colunas: das 12 **colunas** em que a `row` é divida, 7 são ocupadas pela imagem inicial do iphone e 5 pelo action-text.
 
+**Em `whats.html`**:
+```
+    <div class='row justify-content-center'>
+        <div class="col-md-6" style='text-align: center; padding-top:3%;align-content: center;'>
+            <!--html...-->
+        <div class='col-md-6 image' style='align-content: center;'>
+            <!--more html...-->
+        
+```
+Neste caso, a tela é dividida ao meio: 6 **colunas médias** são ocupadas pelo texto informativo e restante das 6 é ocupada pela foto do iphone.
+
+**Em `buy.html`**:
+```
+<section class='row justify-content-center main-section'>
+      <div class="col-md-12">
+```
+Neste caso, a tela é dividida assim: todas as 12 colunas, todas são ocupadas pelo conteúdo principal, que é a tabela.Talvez, uso das colunas neste caso possa parecer desnecessário, pois não há conteúdo um ao lado da outro.
+
+Na verdade, ele usado apenas dar resposividade ao conteúdo da página via o framework Bootstrap.
 ### Componentes do Bootstrap - img-fluid
 
 Foi usado a classe `img-fluid` para deixa o tamanho da imagem resposiva ao tamanho da tela, como demonstrado no(s) o(s) exemplo(s) a seguir:
@@ -102,18 +130,98 @@ Com isso,também tivemos que redimensionar todas as imagens nesta página afim d
     </header>
 ```
 ### Componentes do Bootstrap - progress bar
-No ótpico
+No tópico anterior, foi dito que o `<header>` era igual a todos as páginas.
+Mas isso não é totalmente verdade, pois **há a `div` da classe `progress`, que é o código da barra de progresso/progress bar**, cujo código é descrito abaixo.
 
+```
+<div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+          style="width: 0%;">
+        </div>
+      </div>
+```
+
+**O atributo `style="width: 0%;"` indica o progesso da barra azul**- e o seu comprimento.Nas 6 páginas, o progresso de 100% de é dividido por 5: na **primeira** página o progesso é de **0%**;na **segunda**, o progresso aumenta para **20%**;na **terceira**, **40%**...até ser **100%** na **sexta** página.
 ### Componentes do Bootstrap - button
 
 Usamos o botão -`button`- já disponibilizado pelo Bootstrap em todas as páginas que o usam.
 
+**Em `index.html`:**
 ```
 <a class="btn btn-primary btn-lg" href="whats.html" role="button">Saiba Mais</a>
 ```
-### Componentes do Bootstrap - progress bar
 
-### Outras Alterações
+**Em `whats.html`:**
+```
+<div class='saiba-mais'><a class="btn btn-primary btn-lg" href="hardware.html" role="button">Funcionalidades</a></div>
+```
+
+**Em `buy.html`:**
+```
+<div class='pedir'><a class="btn btn-primary btn-lg" href="" role="button">Pedir</a></div>
+```
+
+**Em `form.html`:**
+```
+<input type="submit" form="cadastro" class='fazer-conta btn btn-primary btn-lg' role="button">
+```
+### Outras Alterações - botão back to top
+Foi colocado um botão de voltar ao topo em `hardware.html`:
+
+**HTML**:
+```
+<button onclick="goTop()" id="botaoTop">Top</button>
+```
+
+**JAVASCRIPT**:
+```
+var btop = document.getElementById("botaoTop");
+window.onscroll = function(){scroll()}
+
+function scroll(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btop.style.display = "block";
+  } else {
+    btop.style.display = "none";
+  }
+
+}
+function goTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+```
+
+**CSS**:
+```
+#botaoTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#0f3abd9d;
+  color: rgba(255, 255, 255, 0.637);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#botaoTop:hover {
+  background-color: #0f3bbd;
+  color: white;
+}
+```
+### Outras Alterações - title 
+O `<title>` das imagens muda de acordo com a imagem do iphone em `whats.html` de acordo com o código abaixo em `whats.js`.
+```
+imagem.title = cores[novo]
+```
+### Considerações Finais
+Dadas estas e outras alterações inrelevantes e pontuais, estas foram as alterações mais recentes do projeto.
 
 ## IFAL - Resumo das alterações - 6/12/2020
 
