@@ -24,3 +24,17 @@ body {
     outline: none;
     border: none;
 }
+
+
+.progress {
+    background-color: #00121F;/*  #1b1a1aa6;*/
+    height:5px;
+}
+
+.progress-bar{
+    background-color: #0F3BBD;/*#00529C;*/
+}
+
+.ainda-nao-tem{
+    font-size: 1.4rem;
+}

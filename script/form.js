@@ -55,3 +55,4 @@ function validarCadastro(){
 function aceito(){
     alert("Seus dados foram aceitos com sucesso");
 }
+
